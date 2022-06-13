@@ -1,0 +1,113 @@
+.row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  .text {
+    font-size: 20px;
+    width: 75%;
+  }
+}
+
+.row_reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 10%;
+  width: 100%;
+
+  .text {
+    font-size: 20px;
+    width: auto;
+  }
+}
+
+.text_container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  .button {
+    margin: auto auto auto 0;
+  }
+}
+
+.services_content .title {
+  text-align: center;
+  margin: auto auto 50px auto;
+}
+
+.card_container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    border-radius: 15px;
+    -webkit-box-shadow: 2px 10px 37px 3px rgba(163, 163, 163, 0.35);
+    box-shadow: 2px 10px 37px 3px rgba(163, 163, 163, 0.35);
+    padding: 25px 50px;
+    width: 200px;
+
+    .card_title {
+      text-align: center;
+    }
+
+    .card_img {
+      width: 100%;
+      height: 50%;
+    }
+
+    .card_text {
+      text-align: center;
+      color: gray;
+    }
+  }
+}
+
+.contact_us_content {
+  width: 100%;
+  display: flex;
+
+  .text_container {
+    width: 33.333333%;
+
+    .text {
+      width: fit-content;
+    }
+  }
+
+  .contact_container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+    width: 33.333333%;
+  }
+
+  .button {
+    margin: 0 auto auto auto;
+    width: fit-content;
+  }
+}
+
+.button_displaying {
+  display: flex;
+  gap: 25px;
+
+  .button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+  }
+}
+
+.picture {
+  width: 50%;
+  height: auto;
+}

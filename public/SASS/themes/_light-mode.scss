@@ -1,0 +1,23 @@
+.light{
+    header{
+        background-color: white;
+
+        .header_list_items{
+            color: black;
+
+            &::after{
+                background-color: black;
+            }
+        }
+    }
+
+    .arrow{
+        color: $dark-color;
+    }
+
+    .footer_list_items{
+        &::after{
+            background-color: black;
+        }
+    }
+}

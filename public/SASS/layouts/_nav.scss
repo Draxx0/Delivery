@@ -1,0 +1,68 @@
+header {
+  position: fixed;
+  top: -3%;
+  left: 0%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 25px auto auto auto;
+  padding: 10px 0;
+  background-color: white;
+  transition: 0.3s;
+  z-index: 3;
+
+  .header_list {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+    .header_list_items {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        display: block;
+        content: "";
+        height: 2px;
+        width: 0%;
+        transition: 0.2s ease-in-out;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+
+      &:nth-child(5) {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .logo {
+    padding-left: 180px;
+    font-weight: 600;
+  }
+
+  .button {
+    margin-right: 200px;
+  }
+
+  .burger {
+    display: none;
+  }
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+}
+
+.scroll-header {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;
+}

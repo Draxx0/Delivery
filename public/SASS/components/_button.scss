@@ -1,0 +1,12 @@
+.button{
+    background-color: $main-color;
+    color: black;
+    font-weight: 600;
+    padding: 13px 30px;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+
+    &:hover{
+        background-color: #e2b326;
+    }
+}

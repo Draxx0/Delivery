@@ -1,0 +1,79 @@
+.dark {
+  background-color: $dark-color;
+
+  header {
+    background-color: $dark-color;
+
+    .logo {
+      color: white;
+    }
+
+    .header_list_items {
+      color: white;
+
+      .header_list_items:nth-child(1)::after {
+        background-color: white;
+      }
+
+      &::after {
+        background-color: white;
+      }
+    }
+
+    .toggle {
+      color: white;
+    }
+  }
+
+  main {
+    .title {
+      color: white;
+    }
+
+    .card {
+      background-color: $container-dark;
+      box-shadow: 0px 11px 30px -18px #292915;
+      .card_title {
+        color: white;
+      }
+
+      .learn_more {
+        color: white;
+      }
+    }
+
+    .subtitle {
+      color: white;
+    }
+
+    .contact_container {
+      strong {
+        color: white;
+      }
+    }
+  }
+
+  footer {
+    background-color: $container-dark;
+
+    .footer_list_title {
+      color: white;
+    }
+
+    .footer_list_items {
+      color: white;
+
+      &::after {
+        background-color: white;
+      }
+    }
+
+    .fa-brands {
+      color: white;
+    }
+
+    .arrow{
+        color: white;
+    }
+  }
+}

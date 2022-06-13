@@ -1,0 +1,74 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $poppins;
+  color: rgb(22, 22, 22);
+}
+
+body {
+  overflow-x: hidden;
+  margin: auto;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 250px;
+  width: 60%;
+  margin: 150px auto auto auto;
+}
+
+footer {
+  transition: 0.3s;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.text {
+  color: grey;
+}
+
+.title {
+  font-size: 50px;
+}
+
+.learn_more {
+  color: black;
+  font-weight: 600;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fdcb35;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+::selection {
+  background-color: #fdcb35;
+  color: #fff;
+}
