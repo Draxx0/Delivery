@@ -66,3 +66,81 @@ header {
 .scroll-header {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;
 }
+
+header .active {
+  position: fixed;
+  top: 0;
+  left: 0%;
+  height: 100vh;
+  z-index: 2;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: -500%;
+  height: 100vh;
+  z-index: 2;
+
+  .menu_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    width: 100vw;
+    background-color: white;
+    transition: 0.3s;
+    height: 100%;
+    z-index: 3;
+    font-size: 1.6rem;
+
+    i {
+      font-size: 32px;
+    }
+  }
+}
+
+@media screen and (max-width: 1745px) {
+  header {
+    .logo {
+      padding-left: 0;
+    }
+
+    .button {
+      margin-right: 0;
+    }
+  }
+  main {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 936px) {
+  header {
+    justify-content: space-between;
+    height: 10vh;
+
+    .logo {
+      padding: 0 20px;
+      font-size: 18px;
+    }
+    .burger {
+      padding: 0 20px;
+
+      i {
+        font-size: 24px;
+      }
+    }
+    .button {
+      display: none;
+    }
+    .header_list {
+      display: none;
+    }
+
+    .burger {
+      display: block;
+    }
+  }
+}

@@ -83,3 +83,23 @@ footer {
     transform: translateY(300px);
   }
 }
+
+@media screen and (max-width: 1383px) {
+  footer {
+    .footer_content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 619px) {
+  footer {
+    .footer_content {
+      width: 50%;
+      margin: auto;
+      grid-template-columns: 1fr;
+    }
+  }
+}

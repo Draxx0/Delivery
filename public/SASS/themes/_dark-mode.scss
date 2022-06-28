@@ -23,6 +23,14 @@
     .toggle {
       color: white;
     }
+
+    .menu_list {
+      background-color: $dark-color;
+
+      .menu_items {
+        color: white;
+      }
+    }
   }
 
   main {
@@ -72,8 +80,8 @@
       color: white;
     }
 
-    .arrow{
-        color: white;
+    .arrow {
+      color: white;
     }
   }
 }
